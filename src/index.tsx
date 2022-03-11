@@ -4,12 +4,25 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAo4yznXh-UCYsfIxTdf3IMUKaRMlsthII",
+    authDomain: "blog-ff790.firebaseapp.com",
+    projectId: "blog-ff790",
+    storageBucket: "blog-ff790.appspot.com",
+    messagingSenderId: "791523754489",
+    appId: "1:791523754489:web:7dfa3916526d12b4b2fd28",
+    measurementId: "G-KPEVMK1FCJ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 
 ReactDOM.render(
   <React.StrictMode>
-
       <App />
-
   </React.StrictMode>,
   document.getElementById('root')
 );
