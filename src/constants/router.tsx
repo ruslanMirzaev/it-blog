@@ -1,10 +1,10 @@
 import RegistrationPage from "../pages/registration-page/RegistrationPage";
-import {registration} from "./url";
+import {DEVELOPMENT_POSTS, REGISTRATION} from "./url";
 
 
 export const publicRouters = [
     {
-        path: registration,
+        path: REGISTRATION,
         element: <RegistrationPage/>,
         exact: true,
     }
@@ -12,7 +12,7 @@ export const publicRouters = [
 
 export const privateRouters = [
     {
-        path: "",
+        path: DEVELOPMENT_POSTS,
         element: "",
         exact: true,
     }
